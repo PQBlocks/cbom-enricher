@@ -1,0 +1,136 @@
+{
+  "description": "Classification vectors for known component names and their PQ families",
+  "source": "Component classification against FIPS parameter tables",
+  "vectors": [
+    {
+      "id": "liboqs-classify",
+      "name": "liboqs",
+      "version": "3.5.7",
+      "imports": ["liboqs", "oqs"],
+      "expected": {
+        "family": "ML-KEM",
+        "classification": "SAFE",
+        "key_size": "768",
+        "std_reference": "FIPS 203",
+        "vendor_id": "IAOE"
+      }
+    },
+    {
+      "id": "openssl-classify",
+      "name": "OpenSSL",
+      "version": "3.5.0",
+      "imports": [],
+      "expected": {
+        "family": "X25519Kyber768",
+        "classification": "TRANSITIONAL",
+        "key_size": "768",
+        "std_reference": "FIPS 203",
+        "vendor_id": "OSSL"
+      }
+    },
+    {
+      "id": "cryptography-classify",
+      "name": "cryptography",
+      "version": "42.0.0",
+      "imports": [],
+      "expected": {
+        "family": "ML-DSA",
+        "classification": "SAFE",
+        "key_size": "65",
+        "std_reference": "FIPS 204",
+        "vendor_id": "PyCA"
+      }
+    },
+    {
+      "id": "dilithium-classify",
+      "name": "lib-dilithium",
+      "version": "1.0.0",
+      "imports": [],
+      "expected": {
+        "family": "ML-DSA",
+        "classification": "SAFE",
+        "key_size": "65",
+        "std_reference": "FIPS 204",
+        "vendor_id": "NIST"
+      }
+    },
+    {
+      "id": "sphincs-classify",
+      "name": "sphincs-plus",
+      "version": "0.2.0",
+      "imports": [],
+      "expected": {
+        "family": "SLH-DSA",
+        "classification": "SAFE",
+        "key_size": "128s",
+        "std_reference": "FIPS 205",
+        "vendor_id": "NIST"
+      }
+    },
+    {
+      "id": "falcon-classify",
+      "name": "libfalcon",
+      "version": "1.0",
+      "imports": [],
+      "expected": {
+        "family": "FN-DSA",
+        "classification": "SAFE",
+        "key_size": "512",
+        "std_reference": "FIPS 206 (draft)",
+        "vendor_id": "NIST"
+      }
+    },
+    {
+      "id": "rsa-classify",
+      "name": "rsa-crypto",
+      "version": "2.0",
+      "imports": [],
+      "expected": {
+        "family": "RSA",
+        "classification": "UNSAFE",
+        "key_size": "2048",
+        "std_reference": "",
+        "vendor_id": ""
+      }
+    },
+    {
+      "id": "ecdsa-classify",
+      "name": "ecdsa-lib",
+      "version": "1.5",
+      "imports": [],
+      "expected": {
+        "family": "ECDSA",
+        "classification": "UNSAFE",
+        "key_size": "256",
+        "std_reference": "",
+        "vendor_id": ""
+      }
+    },
+    {
+      "id": "unknown-classify",
+      "name": "some-random-lib",
+      "version": "1.0.0",
+      "imports": [],
+      "expected": {
+        "family": "UNKNOWN",
+        "classification": "UNKNOWN",
+        "key_size": "",
+        "std_reference": "",
+        "vendor_id": ""
+      }
+    },
+    {
+      "id": "hybrid-classify",
+      "name": "hybrid-pq-lib",
+      "version": "1.0",
+      "imports": ["oqs", "openssl"],
+      "expected": {
+        "family": "ML-KEM",
+        "classification": "SAFE",
+        "key_size": "768",
+        "std_reference": "FIPS 203",
+        "vendor_id": "IAOE"
+      }
+    }
+  ]
+}

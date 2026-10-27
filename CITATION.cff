@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-cbom"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/cbom-enricher"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - cbom
+  - cyclonedx
+  - sbom
+  - cnsa
+  - post-quantum
+  - pqc
+  - enricher
+  - compliance
+abstract: "CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties."
